@@ -1,32 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Condensed:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 #navegador ul{
     list-style-type: none;
     text-align: center;
- }
+}
 
 #navegador li{
     display: inline;
     text-align: center;
- }
+}
 
- #navegador li a {
+#navegador li a {
     padding: 5px 10px 5px 10px;
     color: #333333;
     background-color:#D5F5E3;
     border:  1px solid #333333;
     text-decoration: none;
- }
+}
 
- #navegador li a:hover{
+#navegador li a:hover{
     background-color: #333333;
     color: #ffffff;
- }
+}
  
- .t1 {
+.t1 {
     text-align: center;
     color: #333333;
- }
+}
 
- li {
+li {
     color:#17202A ;
-    
+}
+
+.tabla{
+   width: 600px;
+   text-align: center;
+   display:flexbox; justify-content: center;
+   margin: 2px;
+}
+
+.tabla th{
+   text-align: center;
+   
+}
+table {
+   border: 1px solid black;
+ }
+ 
+ th, td {
+   border: 1px solid gray;
  }
