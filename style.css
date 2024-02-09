@@ -21,42 +21,72 @@ body {
 }
 
 #navegador li a {
-    padding: 5px 10px 5px 10px;
-    color: #333333;
-    background-color:#D5F5E3;
-    border:  1px solid #333333;
+    padding: 30px 60px 30px 60px;
+    color: white;
+    background-image: linear-gradient(to right, #98ec64,#a7e47f );
     text-decoration: none;
+    border-radius: 10px;
 }
 
 #navegador li a:hover{
-    background-color: #333333;
+    background-color: #ffffff;
     color: #ffffff;
 }
- 
+
 .t1 {
     text-align: center;
-    color: #333333;
+    color: white;
+    margin-bottom: 40px;
 }
 
 li {
     color:#17202A ;
 }
 
-.tabla{
-   width: 600px;
-   text-align: center;
-   display:flexbox; justify-content: center;
-   margin: 2px;
-}
+body {
+    background-image: linear-gradient(to right, #145A32 ,#59D20A );
+    height: 200px;
+  }
 
-.tabla th{
-   text-align: center;
-   
-}
-table {
-   border: 1px solid black;
- }
- 
- th, td {
-   border: 1px solid gray;
- }
+  Usar unidades relativas: Usa unidades relativas como em y rem en lugar de unidades absolutas como px para que los estilos se adapten a diferentes tamaños de pantalla.
+
+  position: Define la posición de un elemento en el layout.
+  top: Posiciona un elemento desde la parte superior del contenedor.
+  right: Posiciona un elemento desde la derecha del contenedor.
+  bottom: Posiciona un elemento desde la parte inferior del contenedor.
+  left: Posiciona un elemento desde la izquierda del contenedor.
+  z-index: Define el orden de apilamiento de los elementos.
+  Dimensiones:
+  
+  width: Define el ancho de un elemento.
+  height: Define la altura de un elemento.
+  max-width: Define el ancho máximo de un elemento.
+  max-height: Define la altura máxima de un elemento.
+  min-width: Define el ancho mínimo de un elemento.
+  min-height: Define la altura mínima de un elemento.
+  Márgenes y paddings:
+  
+  margin: Define el margen alrededor de un elemento.
+  margin-top: Define el margen superior de un elemento.
+  margin-right: Define el margen derecho de un elemento.
+  margin-bottom: Define el margen inferior de un elemento.
+  margin-left: Define el margen izquierdo de un elemento.
+  padding: Define el espacio entre el borde y el contenido de un elemento.
+  padding-top: Define el espacio entre el borde superior y el contenido de un elemento.
+  padding-right: Define el espacio entre el borde derecho y el contenido de un elemento.
+  padding-bottom: Define el espacio entre el borde inferior y el contenido de un elemento.
+  padding-left: Define el espacio entre el borde izquierdo y el contenido de un elemento.
+  Colores:
+  
+  color: Define el color del texto de un elemento.
+  background-color: Define el color de fondo de un elemento.
+  Tipografía:
+  
+  font-family: Define la familia de fuentes de un elemento.
+  font-size: Define el tamaño de la fuente de un elemento.
+  font-weight: Define el grosor de la fuente de un elemento.
+  font-style: Define el estilo de la fuente de un elemento (normal, cursiva, etc.).
+  Decoración:
+  
+  text-decoration: Define la decoración del texto de un elemento (subrayado, línea, etc.).
+  border: Define el
