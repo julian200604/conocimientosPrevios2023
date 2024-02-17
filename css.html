@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="../index.html">
+    <button>volver</button>
+  </a>
+    <h1 class="t1">Conocimientos de CSS</h1>
+
+    <h2>Tipos de Selectores</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>Selectores básicos</td>
+          <td>Seleccionan elementos por su nombre de etiqueta.</td>
+        </tr>
+        <tr>
+          <td>Selectores de clase(.clase)</td>
+          <td>Seleccionan elementos por su clase.</td>
+        </tr>
+        <tr>
+            <td>Selectores de ID(#id)</td>
+            <td>Seleccionan elementos por su ID.</td>
+        </tr>
+        <tr>
+            <td>Selector Universal(*)</td>
+            <td>Se utiliza para seleccionar todos los elementos en un documento HTML.</td>
+        </tr>
+    </table>
+
+    <h2>Pseudo-clases</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PSEUDO-CLASE</th>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>a:hover</td>
+          <td>color, background-color, text-decoration</td>
+          <td>Cambia el estilo del enlace cuando el cursor está sobre él.</td>
+        </tr>
+        <tr>
+          <td>a:visited</td>
+          <td>color, text-decoration</td>
+          <td>Cambia el estilo del enlace cuando ha sido visitado.</td>
+        </tr>
+        <tr>
+            <td>a:active</td>
+            <td>color, background-color</td>
+            <td>Cambia el estilo del enlace cuando se está haciendo clic en él.</td>
+        </tr>
+        <tr>
+            <td>button:focus</td>
+            <td>border, outline</td>
+            <td>Cambia el estilo del botón cuando tiene el foco.</td>
+        </tr>
+        <tr>
+            <td>input:focus</td>
+            <td>border, outline</td>
+            <td>Cambia el estilo del campo de entrada cuando tiene el foco.</td>
+        </tr>
+        <tr>
+            <td>li:hover</td>
+            <td>color, background-color</td>
+            <td>Cambia el estilo del elemento de la lista cuando el cursor está sobre él.</td>
+        </tr>
+    </table>
+
+    <h2>Unidades de medida relativas</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>em</td>
+          <td>El tamaño de la fuente actual.</td>
+        </tr>
+        <tr>
+          <td>rem</td>
+          <td>El tamaño de la fuente raíz (html).</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Un porcentaje del tamaño del elemento padre.</td>
+        </tr>
+        <tr>
+            <td>vw</td>
+            <td>Un porcentaje de la anchura del viewport.</td>
+        </tr>
+        <tr>
+            <td>vh</td>
+            <td>Un porcentaje de la altura del viewport.</td>
+        </tr>
+    </table>
+
+    <h2>Fondos y bordes</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>Color de fondo del elemento.</td>
+        </tr>
+        <tr>
+          <td>background-image</td>
+          <td>Imagen de fondo del elemento.</td>
+        </tr>
+        <tr>
+            <td>background-repeat</td>
+            <td>Cómo se repite la imagen de fondo.</td>
+        </tr>
+        <tr>
+            <td>background-position</td>
+            <td>Posición de la imagen de fondo.</td>
+        </tr>
+        <tr>
+            <td>border-width</td>
+            <td>Ancho del borde del elemento.</td>
+        </tr>
+        <tr>
+            <td>border-style</td>
+            <td>Estilo del borde del elemento (solid, dotted, dashed).</td>
+        </tr>
+        <tr>
+            <td>border-color</td>
+            <td>Color del borde del elemento.</td>
+        </tr>
+    </table>
+
+    <h2>Modelo de cajas</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>box-sizing</td>
+          <td>Define cómo se calcula el ancho y alto del elemento.
+              Puede ser content-box (ancho y alto solo incluyen el contenido), 
+              border-box (incluye el borde) o padding-box (incluye el borde y el relleno).
+          </td>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>Margen exterior del elemento. 
+              Se puede establecer para los cuatro lados (arriba, derecha, abajo, izquierda) o como un valor único para todos. 
+          </td>
+        </tr>
+        <tr>
+            <td>padding</td>
+            <td>Relleno interior del elemento. Se puede establecer para los cuatro lados o como un valor único para todos.</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>Propiedades del borde del elemento, 
+                como ancho, estilo y color. 
+                Se puede establecer para los cuatro lados o como un valor único para todos.
+            </td>
+        </tr>
+    </table>
+
+    <h2>Position</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>static</td>
+          <td>Posición normal en el flujo del documento.</td>
+        </tr>
+        <tr>
+          <td>relative</td>
+          <td>Posicionada en relación a su posición normal.</td>
+        </tr>
+        <tr>
+            <td>absolute</td>
+            <td>Posicionada en relación a su elemento padre con posición.</td>
+        </tr>
+        <tr>
+            <td>fixed</td>
+            <td>Posicionada en relación a la ventana gráfica.</td>
+        </tr>
+    </table>
+
+    <h2>Display</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>block</td>
+          <td>Ocupa todo el ancho disponible y se muestra en una nueva línea.</td>
+        </tr>
+        <tr>
+          <td>inline</td>
+          <td>Se muestra en línea con otros elementos.</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>No se muestra.</td>
+        </tr>
+        <tr>
+            <td>flex</td>
+            <td>Permite un diseño flexible con diferentes opciones de distribución.</td>
+        </tr>
+        <tr>
+            <td>grid</td>
+            <td>ermite un diseño en forma de cuadrícula con filas y columnas.</td>
+        </tr>
+    </table>
+
+    <h2>Responsive Design “Media Queries"</h2>
+
+    <table class="tabla" style="margin: 0 auto;">
+        <tr>
+          <th>PROPIEDADES</th>
+          <th>FUNCIONALIDAD</th>
+        </tr>
+        <tr>
+          <td>max-width</td>
+          <td>Ancho máximo de la pantalla.</td>
+        </tr>
+        <tr>
+          <td>min-width</td>
+          <td>Ancho mínimo de la pantalla.</td>
+        </tr>
+        <tr>
+            <td>max-height</td>
+            <td>Altura máxima de la pantalla.</td>
+        </tr>
+        <tr>
+            <td>min-height</td>
+            <td>Altura mínima de la pantalla.</td>
+        </tr>
+        <tr>
+            <td>device-type</td>
+            <td>Tipo de dispositivo (móvil, tableta, escritorio).</td>
+        </tr>
+        <tr>
+            <td>orientation</td>
+            <td>Orientación del dispositivo (horizontal, vertical).</td>
+        </tr>
+     
+      </table>
+</body>
+</html>
