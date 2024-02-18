@@ -8,10 +8,143 @@
 </head>
 <body>
     <a href="../index.html">
-       <button>Volver</button>
+        <button>Volver</button>
     </a>
 
     <h1 class="t1">Conocimientos de MySQl </h1>
-    
+
+    <h2>¿Qué es SQL?</h2>
+    <p>SQL es el lenguaje para administrar y consultar información de bases de datos relacionales.</p>
+    <p>SQL significa: “Structured Query Language”</p>
+    <h2>¿Qué es MySQL?</h2>
+    <p>Es el gestor de bases de datos relacionales (RDBMS) más usado en el mundo en la parte web.</p>
+    <h2>TIPOS DE DATOS:</h2>
+        <h3>NÚMEROS:</h3>
+            <p>Si en la base de Datos se necesita almacenar números con o sin decimales, se debe pensar en un tipo de dato Numérico, los cuales tienen su categoría dependiendo del valor como lo muestra la siguiente tabla.</p>
+            <table class="tabla" style="margin: 0 auto;">
+                <tr>
+                    <td>TIPO DE DATO</td>
+                    <td>TAMAÑO</td>
+                    <td>SINTAXIS</td>
+                </tr>
+                <tr>
+                    <td>TINYINT</td>
+                    <td>0 a 255</td>
+                    <td>edad tinyint</td>
+                </tr>
+                <tr>
+                    <td>SMALL INT</td>
+                    <td>0 a 65535</td>
+                    <td>Puntos small int</td>
+                </tr>
+                <tr>
+                    <td>MEDIUM INT</td>
+                    <td>0 a 16777215</td>
+                    <td>Valor_Articulo medium int</td>
+                </tr>
+                <tr>
+                    <td>INT</td>
+                    <td>0 a 4294967295. A este tipo de campo se le puede declarar un ancho</td>
+                    <td>Valor_Venta int (8)</td>
+                </tr>
+                <tr>
+                    <td>BIG INT</td>
+                    <td>0 a 18,446*1036</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>FLOAT(M,D)</td>
+                    <td rowspan="3">Estos tipos de datos son utilizados para decimales, el tamaño varía según los parámetros. <br>M: Número de la Mantisa. <br>D:Número de Decimales</td>
+                    <td>Definitiva_materia float (2,1)</td>
+                </tr>
+                <tr>
+                    <td>DOUBLE(M,D)</td>
+                    <td>Saldo_cuenta double</td>
+                </tr>
+                <tr>
+                    <td>DECIMAL(M,D)<br>(M,D) son opcionales</td>
+                    <td></td>
+                </tr>
+            </table>
+
+         <h3>CARACTERES: </h3>
+            <p>Si en la base de Datos se necesita almacenar caracteres, se debe pensar en un tipo de dato Texto, los cuales tienen su categoría dependiendo de la cantidad de caracteres a almacenar; los tipos de dato texto son los siguientes:</p>
+            <table class="tabla" style="margin: 0 auto;">
+                <tr>
+                    <td>TIPO DE DATO</td>
+                    <td>TAMAÑO MAX.</td>
+                    <td>SINTAXIS</td>
+                </tr>
+                <tr>
+                    <td>CHAR(X)</td>
+                    <td>255  bytes</td>
+                    <td>PacIdentificacion char (10)</td>
+                </tr>
+                <tr>
+                    <td>VARCHAR(X)</td>
+                    <td>255 bytes</td>
+                    <td>PacNombres varchar (50)</td>
+                </tr>
+                <tr>
+                    <td>TINYTEXT</td>
+                    <td>255 bytes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>TINYBLOB</td>
+                    <td>255 bytes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>TEXT</td>
+                    <td>65535 bytes</td>
+                    <td>Pacpersonalidad text</td>
+                </tr>
+                <tr>
+                    <td>FLOAT(M,D)</td>
+                    <td rowspan="3">Estos tipos de datos son utilizados para decimales, el tamaño varía según los parámetros. <br>M: Número de la Mantisa. <br>D:Número de Decimales</td>
+                    <td>Definitiva_materia float (2,1)</td>
+                </tr>
+                <tr>
+                    <td>DOUBLE(M,D)</td>
+                    <td>Saldo_cuenta double</td>
+                </tr>
+                <tr>
+                    <td>DECIMAL(M,D)<br>(M,D) son opcionales</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3>Int</h3>
+            <p>Crea un commit con los archivos en el área de preparación y un mensaje descriptivo.</p>
+            <h3>Date</h3>
+            <p>Muestra el estado actual del repositorio, incluyendo archivos modificados, agregados y pendientes de confirmar.</p>
+            <h3>Text</h3>
+            <p>Sube los commits locales al repositorio remoto.</p>
+
+            <h3>MODIFICADORES</h3>
+            <h4>auto_increment</h4>
+            <p>El valor se va incrementando automáticamente en cada registro. Aplica para números enteros.</p>
+            <h4>Default</h4>
+            <p>Coloca un valor por defecto, el valor se coloca justo detrás de esta palabra. Aplica para todos tipo de campo excepto TEXT y BLOB.</p>
+            <h4>not null</h4>
+            <p>Impide que un campo sea nulo.</p>
+            <h4>Primary Key</h4>
+            <p>Hace que el campo se considere llave primaria.</p>
+            <h4>Unique</h4>
+            <p>Evita la repetición de valores.</p>
+
+            <h3>MODIFICACIÓN DE OBJETOS CREADOS</h3>
+            <h4>Modify</h4>
+            <p>Modifica un campo, esto puede ser el tipo de dato y/o ancho del campo.</p>
+            <h4>Change</h4>
+            <p>Modifica el nombre de un campo.</p>
+            <h4>Rename</h4>
+            <p>Cambia el nombre a una table.</p>
+            <h4>Drop</h4>
+            <p>Borra Columnas.</p>
+            <h4>Add</h4>
+            <p>Adiciona columnas a una tabla, es importante informar la ubicación de la nueva columna utilizando AFTER.</p>
+
 </body>
 </html>
